@@ -1,7 +1,9 @@
 {
   "name": "seasponge",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "sqlite3": "^3.1.0"
+    },
   "devDependencies": {
     "coffee-script": "^1.7.1",
     "grunt": "^0.4.5",
