@@ -9,13 +9,10 @@ FROM ubuntu:14.04
 
 # Setup environment
 RUN apt-get update
-RUN apt-get install --yes ruby ruby-dev 
-RUN curl --location https://raw.githubusercontent.com/creationix/nvm/v0.11.1/install.sh | bash
-RUN nvm install 4.1.2
-RUN apt-get install --yes npm ruby ruby-dev
+RUN apt-get install --yes ruby ruby-dev nodejs npm
 RUN npm install -g bower grunt-cli 
-RUN npm install -g yo 
-RUN npm install -g generator-angular
+#RUN npm install -g yo 
+#RUN npm install -g generator-angular
 RUN gem install sass compass    
 
 # Setup app
