@@ -95,3 +95,10 @@ Please see the [Development Guide](DEVGUIDE.md)
 
 - [Mozilla Wiki Page](https://wiki.mozilla.org/Security/Mentorships/MWoS/2014/online_threat_modeling_tool)
 - [GitHub Project Wiki](https://github.com/mozilla/seasponge/wiki)
+
+
+### Docker
+
+To build a docker image of this app, you must have docker installed first.
+Run `docker build -t="seasponge-dev-1" .` on project root to setup project dependencies in the docker container.
+Run `docker run it seasponge-dev-1` to enter into the container shell. You will still need to run `grunt serve` to actually bootstrap the app.
